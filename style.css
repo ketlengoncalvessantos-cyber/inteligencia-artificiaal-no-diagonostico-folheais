@@ -1,0 +1,202 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#000;
+}
+
+nav h1{
+color:#ff8fd8;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-around;
+padding:60px;
+background:linear-gradient(135deg,#ff8fd8,#000);
+}
+
+.hero img{
+width:450px;
+border-radius:20px;
+box-shadow:0 0 25px #ff8fd8;
+}
+
+.texto h2{
+font-size:3rem;
+}
+
+button{
+margin-top:20px;
+padding:15px 25px;
+border:none;
+border-radius:10px;
+background:#ff8fd8;
+font-weight:bold;
+cursor:pointer;
+}
+
+section{
+padding:80px 10%;
+}
+
+.cards{
+display:flex;
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:#1e1e1e;
+padding:25px;
+border-radius:15px;
+border:2px solid #ff8fd8;
+}
+
+.conteudo{
+display:flex;
+gap:40px;
+align-items:center;
+margin-top:30px;
+}
+
+.conteudo img{
+width:400px;
+border-radius:20px;
+}
+
+.reverso{
+flex-direction:row-reverse;
+}
+
+.estatisticas{
+display:flex;
+justify-content:space-around;
+background:#ff8fd8;
+color:black;
+font-weight:bold;
+text-align:center;
+}
+
+.numero span{
+font-size:3rem;
+}
+
+footer{
+background:black;
+padding:30px;
+text-align:center;
+}
+#particles{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.galeria img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:20px;
+transition:.4s;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #ff8fd8;
+}
+
+.timeline{
+margin-top:40px;
+border-left:4px solid #ff8fd8;
+padding-left:30px;
+}
+
+.evento{
+margin-bottom:40px;
+background:#1e1e1e;
+padding:20px;
+border-radius:15px;
+}
+
+.evento h3{
+color:#ff8fd8;
+}
+
+.chatbox{
+max-width:600px;
+margin:auto;
+background:#1e1e1e;
+padding:20px;
+border-radius:20px;
+}
+
+#chat{
+height:250px;
+overflow:auto;
+margin-bottom:15px;
+}
+
+#pergunta{
+width:100%;
+padding:15px;
+margin-bottom:10px;
+border:none;
+border-radius:10px;
+}
+
+.mapa{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.mapa div{
+padding:20px;
+background:#ff8fd8;
+color:black;
+font-weight:bold;
+border-radius:15px;
+cursor:pointer;
+}
+
+.mapa div:hover{
+transform:scale(1.1);
+}
