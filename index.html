@@ -3,238 +3,202 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agrinho 2026 - Inteligência Artificial no Diagnóstico</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Inteligência Artificial no Diagnóstico</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f7f9;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2e7d32,#1565c0);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:2.8rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+nav{
+    background:#0d47a1;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin:20px 0;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+.beneficios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.beneficio{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.beneficio h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+footer{
+    background:#263238;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+</style>
 </head>
 <body>
 
 <header>
-    <nav>
-        <h1>🌱 AGRINHO 2026</h1>
-
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#campo">Campo</a></li>
-            <li><a href="#saude">Saúde</a></li>
-            <li><a href="#futuro">Futuro</a></li>
-        </ul>
-    </nav>
-
-    <div class="hero">
-        <div class="texto">
-            <h2>INTELIGÊNCIA ARTIFICIAL NO DIAGNÓSTICO</h2>
-
-            <p>
-                A união entre tecnologia, natureza e inovação está
-                revolucionando a forma como identificamos doenças,
-                protegemos plantações e cuidamos das pessoas.
-            </p>
-
-            <button onclick="mostrarMensagem()">
-                Descobrir Mais
-            </button>
-        </div>
-
-        <img src="img/ia-agro.jpg" alt="IA e Agricultura">
-    </div>
+    <h1>Inteligência Artificial no Diagnóstico</h1>
+    <p>Projeto Agrinho 2025</p>
 </header>
 
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#beneficios">Benefícios</a>
+    <a href="#futuro">Futuro</a>
+</nav>
+
 <section id="sobre">
-    <h2>🤖 O que é Inteligência Artificial?</h2>
+    <div class="card">
+        <h2>O que é Inteligência Artificial?</h2>
+        <p>
+            A Inteligência Artificial (IA) é uma tecnologia capaz de analisar grandes quantidades
+            de dados e identificar padrões. Ela auxilia profissionais da saúde e da agricultura
+            a realizar diagnósticos mais rápidos e precisos.
+        </p>
+    </div>
 
-    <p>
-        A Inteligência Artificial (IA) é uma tecnologia capaz de aprender,
-        analisar dados e tomar decisões inteligentes.
-        Ela consegue identificar padrões invisíveis para os seres humanos,
-        auxiliando profissionais da saúde, pesquisadores e agricultores.
-    </p>
+    <div class="card">
+        <h2>IA no Diagnóstico Médico</h2>
+        <p>
+            A IA pode analisar exames, imagens e históricos de pacientes,
+            ajudando médicos a detectar doenças precocemente e aumentando
+            as chances de tratamento eficaz.
+        </p>
+    </div>
 
-    <div class="cards">
-        <div class="card">
-            <h3>⚡ Velocidade</h3>
-            <p>Analisa milhares de informações em segundos.</p>
+    <div class="card">
+        <h2>IA no Campo</h2>
+        <p>
+            Na agricultura, a IA identifica pragas, doenças em plantas,
+            necessidades de irrigação e melhora a produtividade das lavouras,
+            contribuindo para uma produção mais sustentável.
+        </p>
+    </div>
+</section>
+
+<section id="beneficios">
+    <h2 style="text-align:center; margin-bottom:30px;">Benefícios da IA</h2>
+
+    <div class="beneficios">
+        <div class="beneficio">
+            <h3>⚡ Rapidez</h3>
+            <p>Resultados em poucos segundos.</p>
         </div>
 
-        <div class="card">
+        <div class="beneficio">
             <h3>🎯 Precisão</h3>
-            <p>Reduz erros em diagnósticos.</p>
+            <p>Menor margem de erro nos diagnósticos.</p>
         </div>
 
-        <div class="card">
-            <h3>🌎 Sustentabilidade</h3>
-            <p>Ajuda a preservar recursos naturais.</p>
-        </div>
-    </div>
-</section>
-
-<section id="campo">
-    <h2>🚜 IA no Campo</h2>
-
-    <div class="conteudo">
-        <img src="img/drone.jpg" alt="Drone agrícola">
-
-        <div>
-            <p>
-                Na agricultura, drones, sensores e câmeras inteligentes
-                monitoram plantações em tempo real.
-            </p>
-
-            <p>
-                A IA identifica:
-            </p>
-
-            <ul>
-                <li>Doenças em plantas</li>
-                <li>Pragas agrícolas</li>
-                <li>Necessidade de irrigação</li>
-                <li>Deficiência de nutrientes</li>
-                <li>Previsão de colheitas</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section id="saude">
-    <h2>🏥 IA na Saúde</h2>
-
-    <div class="conteudo reverso">
-
-        <div>
-            <p>
-                Hospitais utilizam Inteligência Artificial para analisar:
-            </p>
-
-            <ul>
-                <li>Raio-X</li>
-                <li>Tomografias</li>
-                <li>Exames laboratoriais</li>
-                <li>Histórico de pacientes</li>
-            </ul>
-
-            <p>
-                Isso permite diagnósticos mais rápidos e precisos,
-                aumentando as chances de tratamento.
-            </p>
+        <div class="beneficio">
+            <h3>🌱 Sustentabilidade</h3>
+            <p>Uso eficiente dos recursos naturais.</p>
         </div>
 
-        <img src="img/saude-ia.jpg" alt="IA na Saúde">
-
+        <div class="beneficio">
+            <h3>📊 Análise de Dados</h3>
+            <p>Processamento de grandes volumes de informação.</p>
+        </div>
     </div>
-</section>
-
-<section class="estatisticas">
-
-    <div class="numero">
-        <span id="n1">0</span>
-        <p>Diagnósticos por minuto</p>
-    </div>
-
-    <div class="numero">
-        <span id="n2">0</span>
-        <p>Dados analisados</p>
-    </div>
-
-    <div class="numero">
-        <span id="n3">0</span>
-        <p>Produtores beneficiados</p>
-    </div>
-
 </section>
 
 <section id="futuro">
-    <h2>🌍 O Futuro da IA</h2>
+    <div class="card">
+        <h2>O Futuro da Inteligência Artificial</h2>
+        <p>
+            A tendência é que a IA esteja cada vez mais presente na saúde,
+            agricultura e educação. Com o avanço da tecnologia, diagnósticos
+            serão mais rápidos, seguros e acessíveis para toda a população.
+        </p>
 
-    <p>
-        A Inteligência Artificial continuará transformando a agricultura,
-        a medicina e a educação.
-    </p>
-
-    <p>
-        Com diagnósticos cada vez mais rápidos e precisos, será possível
-        produzir mais alimentos, preservar o meio ambiente e melhorar a
-        qualidade de vida da população.
-    </p>
-
-    <div id="mensagem"></div>
+        <button onclick="mostrarMensagem()">Saiba Mais</button>
+        <p id="mensagem"></p>
+    </div>
 </section>
 
 <footer>
-    <h3>Projeto Agrinho 2026</h3>
-    <p>
-        Inteligência Artificial no Diagnóstico:
-        Tecnologia e Natureza Construindo o Futuro.
-    </p>
+    <p>Projeto Agrinho - Inteligência Artificial no Diagnóstico | 2025</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+function mostrarMensagem(){
+    document.getElementById("mensagem").innerHTML =
+    "A Inteligência Artificial está transformando o mundo e ajudando a construir um futuro melhor!";
+}
+</script>
 
 </body>
-</html><section class="chatbot-section">
-    <h2>🤖 Assistente IA Agrinho</h2>
-
-    <div class="chatbox">
-        <div id="chat"></div>
-
-        <input
-            type="text"
-            id="pergunta"
-            placeholder="Pergunte algo sobre IA..."
-        >
-
-        <button onclick="responder()">
-            Enviar
-        </button>
-    </div>
-</section>
-<section>
-    <h2>📸 Galeria Tecnológica</h2>
-
-    <div class="galeria">
-
-        <img src="img/ia-agro.jpg">
-
-        <img src="img/drone.jpg">
-
-        <img src="img/saude-ia.jpg">
-
-        <img src="img/robot.jpg">
-
-        <img src="img/natureza.jpg">
-
-        <img src="img/futuro.jpg">
-
-    </div>
-</section><section>
-<h2>📅 Evolução da Inteligência Artificial</h2>
-
-<div class="timeline">
-
-<div class="evento">
-<h3>1950</h3>
-<p>Alan Turing propõe o Teste de Turing.</p>
-</div>
-
-<div class="evento">
-<h3>1997</h3>
-<p>Deep Blue vence campeão mundial de xadrez.</p>
-</div>
-
-<div class="evento">
-<h3>2010</h3>
-<p>IA começa a revolucionar a medicina.</p>
-</div>
-
-<div class="evento">
-<h3>2020</h3>
-<p>IA passa a identificar doenças com alta precisão.</p>
-</div>
-
-<div class="evento">
-<h3>2030+</h3>
-<p>Previsão de diagnósticos inteligentes globais.</p>
-</div>
-
-</div>
-</section>
+</html>
